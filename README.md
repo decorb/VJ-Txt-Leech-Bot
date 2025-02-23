@@ -11,11 +11,11 @@
 
 <b><details><summary>Tap On Me For See Credit</summary>
 
-💝 Credit Goes To [Tech VJ](https://telegram.me/Kingvj01) So Don't Forgot To Give Credit
+💝 Credit Goes To [SAMEER_OFFICAL_091](https://t.me/SAMEER_OFFICAL_091) So Don't Forgot To Give Credit
 
 💖 And Thank You So Much To All Who Help In This Journey 💕
 
-Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
+Copyright ©️ [SAMEER_OFFICAL_091](https://t.me/SAMEER_OFFICAL_091)
 
 </b>
 </details>
@@ -24,10 +24,10 @@ Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
 
 <b><details><summary>Tap On Me For See Details Of Owner</summary>
 
-- YouTube Channel : [Tech VJ](https://youtube.com/@Tech_VJ)
-- Telegram Channel : [VJ Botz](https://telegram.me/VJ_Botz)
-- Contact Link : [King VJ](https://telegram.me/Kingvj01)
-- Instagram Id Link : [Tech VJ](https://instagram.com/tech.vj)
+- YouTube Channel : [NEET BABA 🎓](https://www.youtube.com/@Asponlineeducation)
+- Telegram Channel : [SAMEER_OFFICAL_091](https://t.me/SAMEER_OFFICAL_091)
+- Contact Link : [a_s__love_091](https://www.instagram.com/a_s__love_091/?hl=en)
+- Instagram Id Link : [a_s__love_091](https://www.instagram.com/a_s__love_091/?hl=en)
 
 </b>
 </details>
