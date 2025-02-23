@@ -33,7 +33,7 @@ Copyright ©️ [SAMEER_OFFICAL_091](https://t.me/SAMEER_OFFICAL_091)
 </details>
 
 
-### Copyright ©️ [Tech VJ](https://youtube.com/@Tech_VJ)
+### Copyright ©️ [NEET BABA 🎓](https://www.youtube.com/@Asponlineeducation)
 
 <b>Selling This Repo Or Code Of This Repo For Money Is Strictly Prohibited 🚫</b>
 
