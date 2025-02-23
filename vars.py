@@ -1,5 +1,5 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
+# Don't Remove Credit Tg - @Ashiqi_091
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Ashiqi_091
 # Ask Doubt on telegram @KingVJ01
 
 from os import environ
