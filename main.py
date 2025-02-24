@@ -218,7 +218,7 @@ async def upload(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**🗣𝔻ᴏɴᴇ 😎**")
+    await m.reply_text("**🗣𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎**")
 
 
 bot.run()
