@@ -45,7 +45,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["sameer"]))
+@bot.on_message(filters.command(["sameerji"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('🅰️𝕤ᴇɴᴅ ᴛxᴛ ғɪʟᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
