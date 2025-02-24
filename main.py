@@ -167,8 +167,12 @@ async def upload(bot: Client, m: Message):
             try:  
                 
                 cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**📚 BATCH NAME :●➠** » **{raw_text0}**\n\n 📥EXTRACTED BY :{MR}'
+
+                
                                                                                                                                    
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**📚 BATCH NAME :●➠** » **{raw_text0}**\n\ 📥EXTRACTED BY :{MR}' 
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**📚 BATCH NAME :●➠** » **{raw_text0}**\n\ 📥EXTRACTED BY :{MR}'
+
+                
                                                                                                                                         
                 if "drive" in url:
                     try:
