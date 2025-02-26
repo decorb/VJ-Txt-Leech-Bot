@@ -166,8 +166,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.mkv\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » ** » **{raw_text0}**\n\n📥 𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 :- \n\n━━━━━✦§ÄMÈÈRJÌ❤️✦━━━━━ {MR}'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.pdf \n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » **{raw_text0}**\n\n📥 𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 :- \n\n━━━━━✦§ÄMÈÈRJÌ❤️✦━━━━━ {MR}'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.mkv\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » ** » **{raw_text0}**\n\n📥 𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 :- {MR}' \n\n━━━━━✦§ÄMÈÈRJÌ❤️✦━━━━━ 
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.pdf \n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » **{raw_text0}**\n\n📥 𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 :- {MR}' \n\n━━━━━✦§ÄMÈÈRJÌ❤️✦━━━━━ 
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
