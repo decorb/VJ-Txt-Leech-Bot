@@ -166,9 +166,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.mkv\n**📚 BATCH NAME :●➠ » ** » **{raw_text0}**\n\n 📥 EXTRACTED BY :- \n\n━━━━━✦SAMEER❤️✦━━━━━{MR}'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.pdf \n**📚 BATCH NAME :●➠ » **{raw_text0}**\n\n📥 EXTRACTED BY :-\n\n━━━━━✦SAMEER❤️✦━━━━━ {MR}' 
-                        ka = await helper.download(url, name)
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.mkv\n**📚 BATCH NAME :●➠ » ** » **{raw_text0}**\n\n📥 EXTRACTED BY :-\n\n**━━━━━✦A❤️s✦━━━━━** {MR}'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_091.pdf \n**📚 BATCH NAME :●➠ » **{raw_text0}**\n\n📥 EXTRACTED BY :-\n\n**━━━━━✦ A❤️s✦━━━━━** {MR}'
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
                         count+=1
                         os.remove(ka)
