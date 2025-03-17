@@ -31,7 +31,8 @@ bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
-
+<p align="center">
+  <img src="https://files.catbox.moe/9sc23j.jpg" alt="@neetbaba_pw_bot Logo">
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
