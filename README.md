@@ -2,12 +2,8 @@
   <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="@neetbaba_pw_bot Logo">
 </p>
 <h1 align="center">
-  VJ TXT LEECH BOT
+  SAMEER JI
 </h1>
-
-## Deploy Tutorial - [Video Link](https://youtu.be/l1u3C_F79QE)
-
-## Credit
 
 <b><details><summary>Tap On Me For See Credit</summary>
 
