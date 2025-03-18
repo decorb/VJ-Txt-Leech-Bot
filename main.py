@@ -1,4 +1,4 @@
-# Don't Remove Credit Tg - @VJ_Botz
+# Don't Remove Credit Tg - SAMEER BOT
 # Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
 # Ask Doubt on telegram @KingVJ01
 
@@ -35,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋 {m.from_user.mention} \n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File On Telegram So Basically If You Want To Use Me First Send Me /sameer Command And Then Follow Few Steps..\n\nUse /stop to stop any ongoing task.</b>")
+    await m.reply_text(f"<b>𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋 {m.from_user.mention} \n\n ➠ 𝗜 𝗔𝗺 𝗔 𝗕𝗼𝘁 𝗙𝗼𝗿 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 𝗙𝗿𝗼𝗺 𝗬𝗼𝘂𝗿 **𝗧𝗫𝗧** \n\n ➠ 𝗙𝗶𝗹𝗲 𝗔𝗻𝗱 𝗧𝗵𝗲𝗻 𝗨𝗽𝗹𝗼𝗮𝗱 𝗧𝗵𝗮𝘁 𝗙𝗶𝗹𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗦𝗼 𝗕𝗮𝘀𝗶𝗰𝗮𝗹𝗹𝘆 𝗜𝗳 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲 𝗙𝗶𝗿𝘀𝘁 𝗦𝗲𝗻𝗱 𝗠𝗲 /sameer  \n\n ➠ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗔𝗻𝗱 𝗧𝗵𝗲𝗻 𝗙𝗼𝗹𝗹𝗼𝘄 𝗙𝗲𝘄 𝗦𝘁𝗲𝗽𝘀..\n\n➠ 𝗨𝗦𝗘 /stop 𝘁𝗼 𝘀𝘁𝗼𝗽 𝗮𝗻𝘆 𝗼𝗻𝗴𝗼𝗶𝗻𝗴 𝘁𝗮𝘀𝗸 \n\n➠ 𝗠𝗮𝗱𝗲 𝗕𝘆 :- @ASHIQI_092 .</b>")
 
 
 @bot.on_message(filters.command("stop"))
@@ -69,12 +69,12 @@ async def upload(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
+    await editable.edit(f"**𝗧𝗢𝗧𝗔𝗟 𝗟𝗜𝗡𝗞𝗦 𝗙𝗢𝗨𝗡𝗗 𝗔𝗥𝗘🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**𝗡𝗼𝘄 𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗻𝗱 𝗠𝗲 𝗬𝗼𝘂𝗿 𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲**")
+    await editable.edit("**𝗡𝗼𝘄 𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗻𝗱 𝗠𝗲 𝗬𝗼𝘂𝗿 📚𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -165,8 +165,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv\n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠{MR}\n\n━━━━━━━━✦𝗔❤️𝗦✦━━━━━━━━'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠{MR}\n\n━━━━━━━━✦𝗔❤️𝗦✦━━━━━━━━'
+                cc = f'**[📹] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv\n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠ {MR}\n\n━━━━━━━━✦𝗔❤️𝗦✦━━━━━━━━'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠ {MR}\n\n━━━━━━━━✦𝗔❤️𝗦✦━━━━━━━━'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
