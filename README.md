@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://files.catbox.moe/9sc23j.jpg" alt="@neetbaba_pw_bot Logo">
+  <img src="https://i.ibb.co/C5kmSCCG/a1ba9f7e484e.jpg" alt="@neetbaba_pw_bot Logo">
 </p>
 <h1 align="center">
   SAMEER JI
