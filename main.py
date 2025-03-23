@@ -35,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋 {m.from_user.mention} \n\n ➠ 𝗜 𝗔𝗺 𝗔 𝗕𝗼𝘁 𝗙𝗼𝗿 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 𝗙𝗿𝗼𝗺 𝗬𝗼𝘂𝗿 **𝗧𝗫𝗧** \n\n ➠ 𝗙𝗶𝗹𝗲 𝗔𝗻𝗱 𝗧𝗵𝗲𝗻 𝗨𝗽𝗹𝗼𝗮𝗱 𝗧𝗵𝗮𝘁 𝗙𝗶𝗹𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗦𝗼 𝗕𝗮𝘀𝗶𝗰𝗮𝗹𝗹𝘆 𝗜𝗳 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲 𝗙𝗶𝗿𝘀𝘁 𝗦𝗲𝗻𝗱 𝗠𝗲 /sameer  \n\n ➠ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗔𝗻𝗱 𝗧𝗵𝗲𝗻 𝗙𝗼𝗹𝗹𝗼𝘄 𝗙𝗲𝘄 𝗦𝘁𝗲𝗽𝘀..\n\n➠ 𝗨𝗦𝗘 /stop 𝘁𝗼 𝘀𝘁𝗼𝗽 𝗮𝗻𝘆 𝗼𝗻𝗴𝗼𝗶𝗻𝗴 𝘁𝗮𝘀𝗸 \n\n➠ 𝗠𝗮𝗱𝗲 𝗕𝘆 :- @ASHIQI_092 .</b>")
+    await m.reply_text(f"<b>𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋 {m.from_user.mention} \n\n ➠ 𝗜 𝗔𝗺 𝗔 𝗕𝗼𝘁 𝗙𝗼𝗿 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 𝗙𝗿𝗼𝗺 𝗬𝗼𝘂𝗿 **𝗧𝗫𝗧** \n\n ➠ 𝗙𝗶𝗹𝗲 𝗔𝗻𝗱 𝗧𝗵𝗲𝗻 𝗨𝗽𝗹𝗼𝗮𝗱 𝗧𝗵𝗮𝘁 𝗙𝗶𝗹𝗲 𝗢𝗻 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗦𝗼 𝗕𝗮𝘀𝗶𝗰𝗮𝗹𝗹𝘆 𝗜𝗳 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲 𝗙𝗶𝗿𝘀𝘁 𝗦𝗲𝗻𝗱 𝗠𝗲 /doller  \n\n ➠ 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗔𝗻𝗱 𝗧𝗵𝗲𝗻 𝗙𝗼𝗹𝗹𝗼𝘄 𝗙𝗲𝘄 𝗦𝘁𝗲𝗽𝘀..\n\n➠ 𝗨𝗦𝗘 /stop 𝘁𝗼 𝘀𝘁𝗼𝗽 𝗮𝗻𝘆 𝗼𝗻𝗴𝗼𝗶𝗻𝗴 𝘁𝗮𝘀𝗸 \n\n➠ 𝗠𝗮𝗱𝗲 𝗕𝘆 :- @DOCTOR_DOLLER .</b>")
 
 
 @bot.on_message(filters.command("stop"))
@@ -45,7 +45,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["sameer"]))
+@bot.on_message(filters.command(["doller"]))
 async def upload(bot: Client, m: Message):
     editable = await m.reply_text('𝘀ᴇɴᴅ ᴛ𝘅ᴛ ғɪʟᴇ ⚡️')
     input: Message = await bot.listen(editable.chat.id)
@@ -114,7 +114,7 @@ async def upload(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://files.catbox.moe/9sc23j.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url/nEg » https://i.ibb.co/C5kmSCCG/a1ba9f7e484e.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -165,8 +165,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📹] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} .mkv\n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠ {MR}\n\n━━━━━━━━✦𝗗𝗢𝗖𝗧𝗢𝗥❤️✦━━━━━━━━'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} .pdf \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠ {MR}\n\n━━━━━━━━✦𝗗𝗢𝗖𝗧𝗢𝗥❤️✦━━━━━━━━'
+                cc = f'**[📹] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @DOCTOR_DOLLER .mkv\n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠ {MR}\n\n━━━━━✦Dₒₗₗₑᵣ💲✦━━━━━'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @DOCTOR_DOLLER .pdf \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘:➠** » **{raw_text0}**\n\n📥 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗 𝗕𝗬:➠ {MR}\n\n━━━━━✦Dₒₗₗₑᵣ💲✦━━━━━'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
