@@ -113,6 +113,15 @@ async def upload(bot: Client, m: Message):
         MR = highlighter 
     else:
         MR = raw_text3
+        
+         await editable.edit("**Enter Your PW Token For MPD URL or send 'unknown' for use default**")
+    input4: Message = await bot.listen(editable.chat.id)
+    raw_text4 = input4.text
+    await input4.delete(True)
+    if raw_text4 == 'pw':
+        token = pw_token
+    else:
+        token = raw_text0
    
     await editable.edit("Now send the Thumb url/nEg » https://i.ibb.co/C5kmSCCG/a1ba9f7e484e.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
