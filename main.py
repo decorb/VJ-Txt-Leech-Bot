@@ -64,7 +64,7 @@ async def upload(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
+    await editable.edit(f"**𝗧ᴏᴛᴀʟ ʟɪɴᴋ𝘀 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n**𝗦ᴇɴᴅ 𝗙ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝘀** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -75,7 +75,7 @@ async def upload(bot: Client, m: Message):
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝐄𝐍𝐓𝐄𝐑 𝐘𝐎𝐔𝐑 𝐕𝐈𝐃𝐄𝐎 📸𝐐𝐔𝐀𝐋𝐈𝐓𝐘**\n144,240,360,480,720,1080 please choose quality")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -109,7 +109,7 @@ async def upload(bot: Client, m: Message):
     else:
         MR = raw_text3
         
-    await editable.edit("**Enter Your PW Token For MPD URL or send 'unknown' for use default**")
+    await editable.edit("**ᴇɴᴛᴇʀ ʏᴏᴜʀ ᴘᴡ ᴛᴏᴋᴇɴ ꜰᴏʀ ᴍᴘᴅ ᴜʀʟ ᴏʀ ꜱᴇɴᴅ 'ᴜɴᴋɴᴏᴡɴ' ꜰᴏʀ ᴜꜱᴇ ᴅᴇꜰᴀᴜʟᴛ**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
@@ -118,7 +118,7 @@ async def upload(bot: Client, m: Message):
     else:
         token = raw_text0
         
-    await editable.edit("Now send the Thumb url/nEg » https://i.ibb.co/PdQf7v9/adc655477f63.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url/nEg » https://i.ibb.co/N2mkJRgP/978d68436ad5.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -169,8 +169,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @JB_OFFICIAL2210.mkv \n\n**📚𝐁𝐀𝐓𝐂𝐇 :➠**  **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 : {MR}\n\n━━━━━━━━✦𝗝❤️𝗕✦━━━━━━━━'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @JB_OFFICIAL2210.mkv \n\n**📚𝐁𝐀𝐓𝐂𝐇 :➠**  **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 : {MR}\n\n━━━━━━━━✦𝗝❤️𝗕✦━━━━━━━━'
+                cc = f'**[🎞] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚𝐁𝐀𝐓𝐂𝐇 :➠**  **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 : {MR}\n\n━━━━━━━━✦𝗝❤️𝗕✦━━━━━━━━'
+                cc1 = f'**[🗄] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}  @SAMEER_OFFICAL_092.mkv \n\n**📚𝐁𝐀𝐓𝐂𝐇 :➠**  **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 : {MR}\n\n━━━━━━━━✦𝗝❤️𝗕✦━━━━━━━━'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -213,7 +213,7 @@ async def upload(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**🗣 𝗣𝗜𝗧𝗔 𝗦𝗛𝗥𝗜 𝗛𝗢 𝗚𝗬𝗔 🙏🏻**")
+    await m.reply_text("**🔰𝐃𝐎𝐍𝐄🔰**")
 
 
 bot.run()
