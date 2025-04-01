@@ -1,3 +1,7 @@
+# Don't Remove Credit Tg - @VJ_Botz
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
+# Ask Doubt on telegram @KingVJ01
+
 import os
 import re
 import sys
@@ -31,7 +35,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋! {m.from_user.mention} \n\n ➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️ **𝐓𝐗𝐓​** \n\n ​➠ 𝐂𝐚𝐧 𝐄𝐱𝐭𝐫𝐚𝐜𝐭 𝐕𝐢𝐝𝐞𝐨𝐬 & 𝐏𝐝𝐟 𝐅𝐫𝐨𝐦 𝐘𝐨𝐮𝐫 𝐓𝐞𝐱𝐭 𝐅𝐢𝐥𝐞 𝐚𝐧𝐝 𝐔𝐩𝐥𝐨𝐚𝐝 𝐭𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 \n\n ➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥e..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤 \n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @SAMEER_OFFICAL_092 </b>")
+    await m.reply_text(f"<b>𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋! {m.from_user.mention} \n\n ➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️ **𝐓𝐗𝐓​** \n\n ​➠ 𝐂𝐚𝐧 𝐄𝐱𝐭𝐫𝐚𝐜𝐭 𝐕𝐢𝐝𝐞𝐨𝐬 & 𝐏𝐝𝐟 𝐅𝐫𝐨𝐦 𝐘𝐨𝐮𝐫 𝐓𝐞𝐱𝐭 𝐅𝐢𝐥𝐞 𝐚𝐧𝐝 𝐔𝐩𝐥𝐨𝐚𝐝 𝐭𝐨 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 \n\n ➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥e..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤 \n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @ASHIQI_092 </b>")
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
@@ -108,16 +112,7 @@ async def upload(bot: Client, m: Message):
         MR = highlighter 
     else:
         MR = raw_text3
-        
-    await editable.edit("**Enter Your PW Token For MPD URL or send 'unknown' for use default**")
-    input4: Message = await bot.listen(editable.chat.id)
-    raw_text4 = input4.text
-    await input4.delete(True)
-    if raw_text4 == 'pw':
-        token = pw_token
-    else:
-        token = raw_text0
-        
+   
     await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
@@ -152,7 +147,7 @@ async def upload(bot: Client, m: Message):
              url = requests.get(f'https://api.classplusapp.com/cams/uploader/video/jw-signed-url?url={url}', headers={'x-access-token': 'eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgzNjkyMTIsIm9yZ0lkIjoyNjA1LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTcwODI3NzQyODkiLCJuYW1lIjoiQWNlIiwiZW1haWwiOm51bGwsImlzRmlyc3RMb2dpbiI6dHJ1ZSwiZGVmYXVsdExhbmd1YWdlIjpudWxsLCJjb3VudHJ5Q29kZSI6IklOIiwiaXNJbnRlcm5hdGlvbmFsIjowLCJpYXQiOjE2NDMyODE4NzcsImV4cCI6MTY0Mzg4NjY3N30.hM33P2ai6ivdzxPPfm01LAd4JWv-vnrSxGXqvCirCSpUfhhofpeqyeHPxtstXwe0'}).json()['url']
 
             elif "d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
-                url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NDM0MzE0MTcuNjk2LCJkYXRhIjp7Il9pZCI6IjYyZGVjMmNhOTgxMTdlMDAxODYxYjEzNyIsInVzZXJuYW1lIjoiOTExNzIyMDA5MCIsImZpcnN0TmFtZSI6Ik1kIiwibGFzdE5hbWUiOiJBcmJheiBTaGFpa2giLCJvcmdhbml6YXRpb24iOnsiX2lkIjoiNWViMzkzZWU5NWZhYjc0NjhhNzlkMTg5Iiwid2Vic2l0ZSI6InBoeXNpY3N3YWxsYWguY29tIiwibmFtZSI6IlBoeXNpY3N3YWxsYWgifSwiZW1haWwiOiJtZHNhbWVlcjIzNDU2Nzg5QGdtYWlsLmNvbSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTc0MjgyNjYxN30.4vSqYysXuRkgb-n7hVEPb0LXATQclNKZMGa4ob9GGOg"
+                    url = f"https://anonymouspwplayer-b99f57957198.herokuapp.com/pw?url={url}?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE3NDIwNjkxODEuODk5LCJkYXRhIjp7Il9pZCI6IjYyZGVjMmNhOTgxMTdlMDAxODYxYjEzNyIsInVzZXJuYW1lIjoiOTExNzIyMDA5MCIsImZpcnN0TmFtZSI6Ik1kIiwibGFzdE5hbWUiOiJBcmJheiBTaGFpa2giLCJvcmdhbml6YXRpb24iOnsiX2lkIjoiNWViMzkzZWU5NWZhYjc0NjhhNzlkMTg5Iiwid2Vic2l0ZSI6InBoeXNpY3N3YWxsYWguY29tIiwibmFtZSI6IlBoeXNpY3N3YWxsYWgifSwiZW1haWwiOiJtZHNhbWVlcjIzNDU2Nzg5QGdtYWlsLmNvbSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTc0MTQ2NDM4MX0.0_zU5h6qsPXp4XPnkG3ctAV6LuGy8m0hTMYLnTD76GQ"
 
             name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").replace("https", "").replace("http", "").strip()
             name = f'{str(count).zfill(3)}) {name1[:60]}'
@@ -169,8 +164,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚𝐁𝐀𝐓𝐂𝐇 :➠**  **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 : {MR}\n\n━━━━━✦❤️𝕯𝕺𝕮𝕿𝕺𝕽✦━━━━━'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚𝐁𝐀𝐓𝐂𝐇 :➠**  **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 : {MR}\n\n━━━━━✦❤️𝕯𝕺𝕮𝕿𝕺𝕽✦━━━━━'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » ** » **{raw_text0}**\n\n📥 ​🇪​​🇽​​🇹​​🇷​​🇦​​🇨​​🇹​​🇪​​🇩​ ​🇧​​🇾​ ⦂- {MR}\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » **{raw_text0}**\n\n📥 ​🇪​​🇽​​🇹​​🇷​​🇦​​🇨​​🇹​​🇪​​🇩​ ​🇧​​🇾​ ⦂- {MR}\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -205,7 +200,7 @@ async def upload(bot: Client, m: Message):
                     count += 1
                     time.sleep(1)
 
-           except Exception as e:
+            except Exception as e:
                 await m.reply_text(
                     f"**downloading Interupted **\n{str(e)}\n**Name** » {name}\n**Link** » `{url}`"
                 )
@@ -213,7 +208,7 @@ async def upload(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**🔰𝐃𝐎𝐍𝐄🔰**")
+    await m.reply_text("**🗣 𝗦𝗛𝗔𝗛𝗔𝗕 𝗝𝗜 𝗛𝗢 𝗚𝗬𝗔 🌚**")
 
 
 bot.run()
