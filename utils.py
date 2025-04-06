@@ -180,7 +180,7 @@ async def progress_bar(current, total, reply, start):
 
             remaining_length = bar_length - completed_length
 
-            progress_bar = "◆" * completed_length + "◇" * remaining_length
+            progress_bar = "✦" * completed_length + "✧" * remaining_length
 
             
 
