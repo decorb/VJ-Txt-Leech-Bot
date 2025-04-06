@@ -73,13 +73,13 @@ async def upload(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**𝐍𝐨𝐰 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞**")
+    await editable.edit("**𝐍𝐨𝐰 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞\n\n𝗘𝗴 » `𝗬𝗔𝗞𝗘𝗘𝗡 𝗡𝗘𝗘𝗧 𝗛𝗜𝗡𝗗𝗜 𝟯.𝟬 𝟮𝟬𝟮𝟱🧡`**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("*📸 𝗘𝗻𝘁𝗲𝗿 𝗥𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻 📸**\n➸ `144`\n➸ `240`\n➸ `360`\n➸ `480`\n➸ `720`\n➸ `1080`")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -103,7 +103,7 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 :-")
+    await editable.edit("𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘➻ \n\n𝗘𝗴 » `🧡𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜🧡`")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -113,7 +113,7 @@ async def upload(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url/nEg » https://files.catbox.moe/g7dnnf.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -164,8 +164,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ ** » **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞**\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 ​𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞ **\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @CHAT_WITH_SAMEER_BOT.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ ** » **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞**\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @CHAT_WITH_SAMEER_BOT.pdf  \n\n**📚 ​𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞ **\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
