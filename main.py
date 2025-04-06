@@ -164,8 +164,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ➥ ** » **{raw_text0}**\n\n📥 ​🇪​​🇽​​🇹​​🇷​​🇦​​🇨​​🇹​​🇪​​🇩​ ​🇧​​🇾​ ➥╰┈➤ ❝ {raw_text3} ❞ {MR}\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ➥ **{raw_text0}**\n\n📥 ​🇪​​🇽​​🇹​​🇷​​🇦​​🇨​​🇹​​🇪​​🇩​ ​🇧​​🇾 ​╰┈➤ ❝ {raw_text3} ❞ {MR}\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ➥ ** » **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 ** ➤**  ╰┈➤ ❝{raw_text3} ❞**\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ➥ **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 ** ➤**  ╰┈➤ ❝{raw_text3} ❞ **\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
