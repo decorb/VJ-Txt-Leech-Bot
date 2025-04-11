@@ -1,14 +1,9 @@
-# vars.py — Configuration Variables
+# Don't Remove Credit Tg - @Ashiqi_091
+# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Ashiqi_091
+# Ask Doubt on telegram @KingVJ01
 
-import os
+from os import environ
 
-API_ID = int(os.getenv("API_ID", 17950436))  # Replace with your actual API ID
-API_HASH = os.getenv("API_HASH", "9d8ae4d35b1106df910b94dcaf73d346")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "7955197951:AAHBPLN4CrbX4t502WhMiq1WttR0nXVk5n0")
-CHANNEL_ID = int(os.getenv("CHANNEL_ID", -1002359983884))  # Your channel ID
-
-# Optional: Admins list
-SUDO_USERS = [123456789, 987654321]  # Telegram user IDs
-
-# Download directory (temporary)
-DOWNLOAD_DIR = "downloads
+API_ID = int(environ.get("API_ID", "17950436"))
+API_HASH = environ.get("API_HASH", "9d8ae4d35b1106df910b94dcaf73d346")
+BOT_TOKEN = environ.get("BOT_TOKEN", "")
