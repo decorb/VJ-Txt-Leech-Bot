@@ -1,21 +1,20 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import logging
-from logging.handlers import RotatingFileHandler
+import os
 
-logging.basicConfig(
-    level=logging.ERROR,
-    format=
-    "%(asctime)s - %(levelname)s - %(message)s [%(filename)s:%(lineno)d]",
-    datefmt="%d-%b-%y %H:%M:%S",
-    handlers=[
-        RotatingFileHandler("logs.txt", maxBytes=50000000, backupCount=10),
-        logging.StreamHandler(),
-    ],
-)
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
+def setup_logger(name='bot_logger', log_file='logs/bot.log', level=logging.INFO):
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
 
+    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
-logging = logging.getLogger()
+    handler = logging.FileHandler(log_file)
+    handler.setFormatter(formatter)
+
+    stream_handler = logging.StreamHandler()
+    stream_handler.setFormatter(formatter)
+
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    logger.addHandler(handler)
+    logger.addHandler(stream_handler)
+
+    return logger
