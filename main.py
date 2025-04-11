@@ -38,7 +38,3 @@ async def upload_file(client, message: Message):
     await message.reply("✅ File uploaded to channel!")
 
 bot.run()
-
-
-
-bot.run()
