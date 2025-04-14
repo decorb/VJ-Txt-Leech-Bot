@@ -1,41 +1,83 @@
-async def progress_bar(current, total, reply, start, your_batch_name="Not Set", your_file_name="Unknown File", total_links=0):
-    if timer.can_send():
-        now = time.time()
-        diff = now - start
-        if diff < 1:
-            return
-        else:
-            percent = f"{current * 100 / total:.1f}%"
-            elapsed_time = round(diff)
-            speed = current / elapsed_time
-            remaining = total - current
-            eta = hrt(remaining / speed, precision=1) if speed > 0 else "-"
-            
-            speed_str = f"{hrb(speed)}/s"
-            total_str = hrb(total)
-            current_str = hrb(current)
-            
-            bar_length = 11
-            done = int(current * bar_length / total)
-            left = bar_length - done
-            progress = "█" * done + "░" * left
+# utils.py — Combined with progress and basic helpers
 
-            try:
-                text = (
-                    "<b>\n"
-                    "╭──⌯════⏫ 𝗨𝗣𝗟𝗢𝗔𝗗𝗜𝗡𝗚... ⌯────╮\n"
-                    f"├ 📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘     » {your_batch_name}\n"
-                    f"├ 📄 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲      » {your_file_name}\n"
-                    f"├ 🔗 𝗧𝗼𝘁𝗮𝗹 𝗟𝗶𝗻𝗸𝘀     » {total_links}\n"
-                    f"├ 📊 Progress       » {progress} |﹝{percent}﹞\n"
-                    f"├ ⚡ Speed          » {speed_str}\n"
-                    f"├ 📥 Uploaded       » {current_str}\n"
-                    f"├ 📦 Total Size     » {total_str}\n"
-                    f"├ ⏳ ETA            » {eta}\n"
-                    "├ 🤖 Bot by        » <a href='https://t.me/A_S_9162'>@A_S_9162</a>\n"
-                    "╰──═✪ <a href='https://t.me/SAMEER_OFFICAL_092'>SAMEER OFFICAL</a> ✪══─╯\n"
-                    "</b>"
-                )
-                await reply.edit(text, disable_web_page_preview=True)
-            except FloodWait as e:
-                time.sleep(e.x)
+import os
+import shutil
+import time
+import logging
+from datetime import timedelta
+from pyrogram.errors import FloodWait
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("utils")
+
+DOWNLOAD_DIR = "downloads"
+
+# Basic file utils
+def clean_up(path: str):
+    try:
+        if os.path.exists(path):
+            if os.path.isfile(path):
+                os.remove(path)
+            elif os.path.isdir(path):
+                shutil.rmtree(path)
+    except Exception as e:
+        logger.error(f"Cleanup error: {e}")
+
+def get_file_extension(file_name: str):
+    return os.path.splitext(file_name)[-1]
+
+# Progress Bar Helpers
+class Timer:
+    def __init__(self, delay=5):
+        self.last = time.time()
+        self.delay = delay
+
+    def ready(self):
+        if time.time() - self.last >= self.delay:
+            self.last = time.time()
+            return True
+        return False
+
+def format_size(size):
+    for unit in ['B','KB','MB','GB','TB']:
+        if size < 1024:
+            return f"{size:.2f}{unit}"
+        size /= 1024
+    return f"{size:.2f}PB"
+
+def format_time(seconds):
+    return str(timedelta(seconds=int(seconds)))
+
+progress_timer = Timer()
+
+async def progress_bar(current, total, reply, start_time):
+    if not progress_timer.ready():
+        return
+
+    now = time.time()
+    elapsed = now - start_time
+    if elapsed == 0:
+        return
+
+    speed = current / elapsed
+    eta = (total - current) / speed if speed > 0 else 0
+    bar_length = 15
+    done = int(bar_length * current / total)
+    percent = (current / total) * 100
+    bar = '█' * done + '▒' * (bar_length - done)
+
+    text = (
+        f"**┌────═━⇗ 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗𝗜𝗡𝗚 ⇖━═────┐**\n\n"
+        f"**┣⪼ [{bar}]**\n\n"
+        f"**┣⪼ 🚀 Speed:** {format_size(speed)}/s\n\n"
+        f"**┣⪼ 📈 Progress:** {percent:.1f}%\n\n"
+        f"**┣⪼ 📦 Loaded:** {format_size(current)} / {format_size(total)}\n\n"
+        f"**┣⪼ ⏳ ETA:** {format_time(eta)}\n\n"
+        f"**└────═━ ✨ SAMEER JI ✨ ━═────┘**"
+    )
+
+    try:
+        await reply.edit(text)
+    except FloodWait as e:
+        time.sleep(e.value)
+
