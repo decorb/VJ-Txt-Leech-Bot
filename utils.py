@@ -69,10 +69,12 @@ async def progress_bar(current, total, reply, start_time):
     text = (
         f"**┌────═━⏫ 𝗨𝗣𝗟𝗢𝗔𝗗𝗜𝗡𝗚...━═────┐**\n\n"
         f"**┣⪼ [{bar}]**\n\n"
+        f"**┣⪼📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘     » {your_batch_name}\n"
         f"**┣⪼ 🚀 Speed:** {format_size(speed)}/s\n\n"
         f"**┣⪼ 📈 Progress:** {percent:.1f}%\n\n"
         f"**┣⪼ 📦 Loaded:** {format_size(current)} / {format_size(total)}\n\n"
         f"**┣⪼ ⏳ ETA:** {format_time(eta)}\n\n"
+        f"**┣⪼ 🤖 BOT MADE BY AS\n\n"
         f"**└────═━ ✨ SAMEER JI ✨ ━═────┘**"
     )
 
