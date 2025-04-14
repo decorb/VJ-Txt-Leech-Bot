@@ -202,10 +202,11 @@ async def upload(bot: Client, m: Message):
                             document=ka,
                             caption=cc1
                         )
-                        count += 1
-                        os.remove(ka)
-                        time.sleep(1)
-                    except FloodWait as e:
-                        await m.reply_text(str(e))
-                        time.sleep(e
+                       continue
 
+    except Exception as e:
+        await m.reply_text(e)
+    await m.reply_text("**🗣 𝗣𝗜𝗧𝗔 𝗦𝗛𝗥𝗜 𝗛𝗢 𝗚𝗬𝗔 🙏🏻**")
+
+
+bot.run()
