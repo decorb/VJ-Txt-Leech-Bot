@@ -29,9 +29,38 @@ bot = Client(
     bot_token=BOT_TOKEN)
 
 
+# Inline keyboard for start command
+keyboard = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/A_S_9162") ],
+                    [
+                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/TXT_UPDATE_AS") ],
+                    [
+                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/TXT_UPDATE_AS")                              
+                ],           
+            ]
+      )
+    
+# Image URLs for the random image feature
+image_urls = [
+    "https://files.catbox.moe/g7dnnf.jpg",
+    "https://files.catbox.moe/b0ptct.jpg",
+    # Add more image URLs as needed
+]
+random_image_url = random.choice(image_urls) 
+# Caption for the image
+caption = (
+        "**ʜᴇʟʟᴏ👋**\n\n"
+        "☆ **ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.**\n"
+        "☆ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /sameerji.\n"
+        "☆ **ғᴏʀ ɢᴜɪᴅᴇ sᴇɴᴅ /help."
+)
+    
+# Start command handler
 @bot.on_message(filters.command(["start"]))
-async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>💙 Hello! {m.from_user.mention} \n\n Send me a TXT file with PW links, and I will download and send the lectures here.\n\n ➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥e..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤 \n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @DOCTOR_ASP </b>")
+async def start_command(bot: Client, message: Message):
+    await bot.send_photo(chat_id=message.chat.id, photo=random_image_url, caption=caption, reply_markup=keyboard)
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
