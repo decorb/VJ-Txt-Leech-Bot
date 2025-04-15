@@ -30,12 +30,7 @@ bot = Client(
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
     await m.reply_text(
-        f"<b>💙 Hello! {m.from_user.mention} \n\n"
-        "Send me a TXT file with PW links, and I will download and send the lectures here.\n\n"
-        "➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞..\n\n"
-        "➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤\n\n"
-        "➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @DOCTOR_ASP </b>"
-    )
+        f"<b>💙 Hello! {m.from_user.mention} \n\n Send me a TXT file with PW links, and I will download and send the lectures here.\n\n➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤\n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @DOCTOR_ASP </b>")
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m: Message):
@@ -72,25 +67,19 @@ async def upload(bot: Client, m: Message):
     # Ask for initial download number (start point)
     await editable.edit(
         f"**𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗** **{len(links)}**\n\n"
-        "**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**"
-    )
+        "**𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤** **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
     # Ask for batch name
-    await editable.edit(
-        "**𝐍𝐨𝐰 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 `𝗬𝗔𝗞𝗘𝗘𝗡 𝗡𝗘𝗘𝗧 𝗛𝗜𝗡𝗗𝗜 𝟯.𝟬 𝟮𝟬𝟮𝟱🧡`**"
-    )
+    await editable.edit("**𝐍𝐨𝐰 𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐁𝐚𝐭𝐜𝐡 𝐍𝐚𝐦𝐞 `𝗬𝗔𝗞𝗘𝗘𝗡 𝗡𝗘𝗘𝗧 𝗛𝗜𝗡𝗗𝗜 𝟯.𝟬 𝟮𝟬𝟮𝟱🧡`**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
 
     # Ask for resolution
-    await editable.edit(
-        "*📸 𝗘𝗻𝘁𝗲𝗿 𝗥𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻 📸**\n"
-        "➸ `144`\n➸ `240`\n➸ `360`\n➸ `480`\n➸ `720`\n➸ `1080`"
-    )
+    await editable.edit("*📸 𝗘𝗻𝘁𝗲𝗿 𝗥𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻 📸**\n""➸ `144`\n➸ `240`\n➸ `360`\n➸ `480`\n➸ `720`\n➸ `1080`")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -134,9 +123,7 @@ async def upload(bot: Client, m: Message):
         token = raw_text0
 
     # Ask for thumbnail URL
-    await editable.edit(
-        "Now send the Thumb url\nEg » https://files.catbox.moe/g7dnnf.jpg \nOr if you don't want thumbnail send = no"
-    )
+    await editable.edit("Now send the Thumb url\nEg » https://files.catbox.moe/g7dnnf.jpg \nOr if you don't want thumbnail send = no")
     input6: Message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -206,20 +193,8 @@ async def upload(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = (
-                    f'**[📽️] Vid_ID:** {str(count).zfill(3)}.**\n\n'
-                    f'**🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘** ➥ {name1} @CHAT_WITH_SAMEER_BOT.mkv \n\n'
-                    f'**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ ** » **{raw_text0}**\n\n'
-                    f'📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞**\n\n'
-                    f'❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
-                )
-                cc1 = (
-                    f'**[📁] Pdf_ID:** {str(count).zfill(3)}.**\n\n'
-                    f'**🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘** ➥ {name1} @CHAT_WITH_SAMEER_BOT.pdf  \n\n'
-                    f'**📚 ​𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ **{raw_text0}**\n\n'
-                    f'📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞ **\n\n'
-                    f'❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
-                )
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.**\n\n''**🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘** ➥ {name1} @CHAT_WITH_SAMEER_BOT.mkv \n\n''**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ ** » **{raw_text0}**\n\n'📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞**\n\n''❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}.**\n\n'**🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘** ➥ {name1} @CHAT_WITH_SAMEER_BOT.pdf  \n\n'**📚 ​𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞ **\n\n'❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -245,13 +220,7 @@ async def upload(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = (
-                        f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n"
-                        f"**📝Name »** `{name}`\n"
-                        f"❄Quality » {raw_text2}\n\n"
-                        f"**🔗URL »** `{url}`\n\n"
-                        f"**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ➺𝗗𝗢𝗖𝗧𝗢𝗥 𝗦𝗔𝗛𝗔𝗕"
-                    )
+                    Show = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{name}`\n"❄Quality » {raw_text2}\n\n"**🔗URL »** `{url}`\n\n"**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ➺𝗗𝗢𝗖𝗧𝗢𝗥 𝗦𝗔𝗛𝗔𝗕
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
