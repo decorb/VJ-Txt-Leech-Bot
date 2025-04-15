@@ -67,7 +67,7 @@ async def progress_bar(current, total, reply, start_time):
     bar = '█' * done + '▒' * (bar_length - done)
 
     text = (
-       f"**┌────═━⏫ 𝗨𝗣𝗟𝗢𝗔𝗗𝗜𝗡𝗚...━═────┐**\n\n"
+         f"**┌────═━⏫ 𝗨𝗣𝗟𝗢𝗔𝗗𝗜𝗡𝗚...━═────┐**\n\n"
          f"**┣⪼ [{bar}]**\n\n"
          f"**┣⪼ 🚀 Speed:** {format_size(speed)}/s\n\n"
          f"**┣⪼ 📈 Progress:** {percent:.1f}%\n\n"
