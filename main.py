@@ -14,6 +14,12 @@ bot = Client(
 
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002359983884"))
 
+# Start message handler
+@bot.on_message(filters.command("start") & filters.private)
+async def start_handler(bot: Client, message: Message):
+    start_msg = "👋 Hello! Welcome to the Sameer Ji Leech Bot. Please send me a `.txt` file containing the necessary links and I will fetch your requested content."
+    await message.reply_text(start_msg)
+
 @bot.on_message(filters.command("sameerji") & filters.private)
 async def sameerji_handler(bot: Client, message: Message):
     if not message.reply_to_message or not message.reply_to_message.document:
@@ -41,6 +47,7 @@ async def sameerji_handler(bot: Client, message: Message):
         try:
             name = None
             if "pdf" in url.lower() or url.endswith(".pdf"):
+                # Handling PDF download
                 show_msg = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{url}`\n❄**Quality » PDF**\n\n**🔗URL »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ➺ 𝗗𝗢𝗖𝗧𝗢𝗥 𝗦𝗔𝗛𝗔𝗕**"
                 prog = await message.reply_text(show_msg)
 
@@ -54,7 +61,7 @@ async def sameerji_handler(bot: Client, message: Message):
 
                 caption = f'''**📁 𝙋𝙙𝙛_𝙄𝘿 ➠** `{str(count).zfill(3)}`\n
 **📄 𝙋𝙙𝙛 𝙉𝙖𝙢𝙚 ➠** `{name}`\n
-**🎯 𝘽𝙖𝙩𝙘𝙝 ➠** `{raw_text0}`\n
+**🎯 𝘾𝙡𝙖𝙨𝙨 ➠** `{raw_text0}`\n
 **📥 𝙀𝙭𝙩𝙧𝙖𝙘𝙩𝙚𝙙 𝘽𝙮 ➠** {raw_text3}\n
 **💙𝙎𝘼𝙈𝙀𝙀𝙍 𝙅𝙄 𝘽𝙊𝙏💙**'''
                 await bot.send_document(
@@ -66,6 +73,7 @@ async def sameerji_handler(bot: Client, message: Message):
                 os.remove(pdf_path)
 
             else:
+                # Handling Video download
                 show_msg = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{url}`\n❄**Quality » {raw_text2}``\n\n**🔗URL »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ➺ 𝗗𝗢𝗖𝗧𝗢𝗥 𝗦𝗔𝗛𝗔𝗕**"
                 prog = await message.reply_text(show_msg)
 
@@ -104,6 +112,3 @@ async def sameerji_handler(bot: Client, message: Message):
 
 if __name__ == "__main__":
     bot.run()
-
-
-
