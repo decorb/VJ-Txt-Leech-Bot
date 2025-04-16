@@ -1,19 +1,13 @@
 import os
-import re
 import sys
-import json
-import time
 import asyncio
-import requests
-import subprocess
+from subprocess import getstatusoutput
 
 import core as helper
 from utils import progress_bar
 from vars import API_ID, API_HASH, BOT_TOKEN
 from aiohttp import ClientSession
 from pyromod import listen
-from subprocess import getstatusoutput
-
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
@@ -29,31 +23,30 @@ bot = Client(
 
 
 def build_caption(vid_id, title, uploader_username, extension, resolution, batch_name, tag_line):
-    return f"""➖➖➖✦{vid_id}✦➖➖➖
+    return f"""**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**
 
-📝 Title: {title}
-╰┈➤ Extention : @{uploader_username} 🖤.{extension}
-╰┈➤ Resolution : [{resolution}]
+**📝Name »** `{title}`
+**❄Quality » {resolution}`
 
-📦 Batch Name: {batch_name}
+**🔗URL »** `{vid_id}`
 
-📤 Extracted By :  
+**📦Batch Name:** {batch_name}
+
+**📤 Extracted By:**
 ╭───────⋆⋅✦⋅⋆───────╮  
 @{uploader_username}  
 ╰───────⋆⋅✦⋅⋆───────╯
 
 ⫷━❖{tag_line}❖━⫸"""
 
-
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
-    await m.reply_text(f"<b>💙 Hello! {m.from_user.mention} \n\n Send me a TXT file with PW links, and I will download and send the lectures here.\n\n ➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥e..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤 \n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @DOCTOR_ASP </b>")
+    await m.reply_text(f"<b>💙 Hello! {m.from_user.mention} \n\n Send me a TXT file with PW links, and I will download and send the lectures here.\n\n ➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤 \n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @DOCTOR_ASP </b>")
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
     await m.reply_text("**​🇸​​🇹​​🇴​​🇵​​🇵​​🇪​​🇩​**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
-
 
 @bot.on_message(filters.command(["sameerji"]))
 async def upload(bot: Client, m: Message):
@@ -87,7 +80,7 @@ async def upload(bot: Client, m: Message):
     raw_text0 = input1.text
     await input1.delete(True)
 
-    await editable.edit("*📸 𝗘𝗻𝘁𝗲𝗿 𝗥𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻 📸**\n➸ `144`\n➸ `240`\n➸ `360`\n➸ `480`\n➸ `720`\n➸ `1080`")
+    await editable.edit("*📸 𝗘𝗻𝘁𝗲𝗿 𝗥𝗲𝘀𝗼𝗹𝘂𝘁𝗶𝗼𝗻 📸\n➸ `144`\n➸ `240`\n➸ `360`\n➸ `480`\n➸ `720`\n➸ `1080`")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -136,12 +129,25 @@ async def upload(bot: Client, m: Message):
         name1 = links[i][0].strip().replace(" ", "_")[:60]
         filename = f"{str(count).zfill(3)}) {name1}"
         extension = "mkv"
-        caption = build_caption(str(count).zfill(3), name1, uploader, extension, res, raw_text0, tag_line)
-        dummy_path = f"/path/to/{filename}.{extension}"
+        caption = build_caption(
+            str(count).zfill(3), name1, uploader, extension, res, raw_text0, tag_line
+        )
+        
+        # Debugging line to check the final caption
+        print(f"Sending caption for {name1}: {caption}")
 
-        await bot.send_document(chat_id=m.chat.id, document=dummy_path, caption=caption)
+        dummy_path = f"/path/to/{filename}.{extension}"
+        
+        # Send the document
+        await bot.send_document(
+            chat_id=m.chat.id,
+            document=dummy_path,
+            caption=caption,
+            thumb=thumb if thumb != "no" else None,
+            parse_mode='Markdown'  # Ensure to use Markdown formatting
+        )
         count += 1
 
-
 bot.run()
+
 
