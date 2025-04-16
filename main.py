@@ -29,23 +29,6 @@ bot = Client(
     bot_token=BOT_TOKEN)
 
 
-def build_caption(vid_id, title, uploader_username, extension, resolution, batch_name, tag_line):
-    return f"""➖➖➖✦{vid_id}✦➖➖➖
-
-📝 Title: {title}
-╰┈➤ Extention : @{uploader_username} 🖤.{extension}
-╰┈➤ Resolution : [{resolution}]
-
-📦 Batch Name: {batch_name}
-
-📤 Extracted By :  
-╭───────⋆⋅✦⋅⋆───────╮  
-@{uploader_username}  
-╰───────⋆⋅✦⋅⋆───────╯
-
-⫷━❖{tag_line}❖━⫸"""
-
-
 @bot.on_message(filters.command(["start"]))
 async def start(bot: Client, m: Message):
     await m.reply_text(f"<b>💙 Hello! {m.from_user.mention} \n\n Send me a TXT file with PW links, and I will download and send the lectures here.\n\n ➠ 𝐔𝐬𝐞 /sameerji 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥e..\n\n ➠ 𝐔𝐬𝐞 /stop 𝐓𝐨 𝐬𝐭𝐨𝐩 𝐀𝐧𝐲 𝐎𝐧𝐠𝐨𝐢𝐧𝐠 𝐓𝐚𝐬𝐤 \n\n ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:- @DOCTOR_ASP </b>")
@@ -186,14 +169,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.**\n\n\n**🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘** ➥ {𝗻𝗮𝗺𝗲𝟭} @CHAT_WITH_SAMEER_BOT.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ ** » **{raw_text0}**\n\n📤 Extracted By :  
-╭───────⋆⋅✦⋅⋆───────╮  
-@{uploader_username}  
-╰───────⋆⋅✦⋅⋆───────╯ ❞**\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}.**\n\n\n**🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘** ➥ {𝗻𝗮𝗺𝗲𝟭} @CHAT_WITH_SAMEER_BOT.pdf  \n\n**📚 ​𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ **{raw_text0}**\n\n📤 Extracted By :  
-╭───────⋆⋅✦⋅⋆───────╮  
-@{uploader_username}  
-╰───────⋆⋅✦⋅⋆───────╯ **\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.**\n\n\n**🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘** ➥ {𝗻𝗮𝗺𝗲𝟭} @CHAT_WITH_SAMEER_BOT.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ ** » **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞**\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}.**\n\n\n**🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘** ➥ {𝗻𝗮𝗺𝗲𝟭} @CHAT_WITH_SAMEER_BOT.pdf  \n\n**📚 ​𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘​ ➥ **{raw_text0}**\n\n📥 𝗘𝗫𝗧𝗥𝗔𝗖𝗧𝗘𝗗 𝗕𝗬 **╰┈➤** ❝{raw_text3} ❞ **\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -240,5 +217,6 @@ async def upload(bot: Client, m: Message):
 
 
 bot.run()
+
 
 
