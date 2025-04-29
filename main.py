@@ -79,7 +79,7 @@ async def upload(bot: Client, m: Message):
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n\n➺144n\n\n➺240\n\n➺360\n\n➺480\n\n➺720\n\n➺1080 please choose quality")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -103,7 +103,7 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 :-")
+    await editable.edit("☠️ अपना नाम डाल बे ☠️ \n\nEg ➥ समीर ji ")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -113,7 +113,7 @@ async def upload(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url/nEg ➥ https://files.catbox.moe/g7dnnf.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -191,7 +191,7 @@ async def upload(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
+                    Show = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n☠️ चलो ले चलें तुझे तारों के श्हर मे 🥰☠️"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
