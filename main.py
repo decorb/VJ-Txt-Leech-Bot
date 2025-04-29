@@ -164,8 +164,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                 cc = f'**[📽️] Vid_ID:\n\n**┈ ⋞ 〈  {str(count).zfill(3)} 〉 ⋟ ┈**\n\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘➥\n{𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** ➥ **{raw_text0}**\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽  {MR}\n\n•┈••✦ ❤𝗦𝗔𝗠𝗘𝗘𝗥 𝗕𝗛𝗬𝗬𝗔❤ ✦••┈•'
-                cc1 = f'**[📁] Pdf_ID:\n\n**┈ ⋞ 〈  {str(count).zfill(3)} 〉 ⋟ ┈\n\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➥\n{𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➥**{raw_text0}**\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽  {MR}\n\n•┈••✦ ❤𝗦𝗔𝗠𝗘𝗘𝗥 𝗕𝗛𝗬𝗬𝗔❤ ✦••┈•'
+                 cc = f'**[📽️] Vid_ID:**┈ ⋞ 〈  {str(count).zfill(3)} 〉 ⋟ ┈**\n\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘➥\n{𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** ➥ **{raw_text0}**\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽  {MR}\n\n•┈••✦ ❤𝗦𝗔𝗠𝗘𝗘𝗥 𝗕𝗛𝗬𝗬𝗔❤ ✦••┈•'
+                cc1 = f'**[📁] Pdf_ID:**┈ ⋞ 〈  {str(count).zfill(3)} 〉 ⋟ ┈\n\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➥\n{𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➥**{raw_text0}**\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽  {MR}\n\n•┈••✦ ❤𝗦𝗔𝗠𝗘𝗘𝗥 𝗕𝗛𝗬𝗬𝗔❤ ✦••┈•'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
