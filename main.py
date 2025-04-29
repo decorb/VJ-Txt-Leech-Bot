@@ -1,6 +1,6 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit Tg - SAMEER JI 
+# Subscribe YouTube Channel For Amazing Bot  
+# Ask Doubt on telegram SAMEER JI
 
 import os
 import re
@@ -79,7 +79,7 @@ async def upload(bot: Client, m: Message):
     await input1.delete(True)
     
 
-    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
+    await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n\n➔144\n\n➔240\n\n➔360\n\n➔480\n\n➔720\n\n➔1080 please choose quality")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -113,7 +113,7 @@ async def upload(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
+    await editable.edit("Now send the Thumb url/nEg ➺ https://files.catbox.moe/g7dnnf.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -164,8 +164,8 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » ** » **{raw_text0}**\n\n📥 ​🇪​​🇽​​🇹​​🇷​​🇦​​🇨​​🇹​​🇪​​🇩​ ​🇧​​🇾​ ⦂- {MR}\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 ​🇧​​🇦​​🇹​​🇨​​🇭​ ​🇳​​🇦​​🇲​​🇪​ ⦂●➠ » **{raw_text0}**\n\n📥 ​🇪​​🇽​​🇹​​🇷​​🇦​​🇨​​🇹​​🇪​​🇩​ ​🇧​​🇾​ ⦂- {MR}\n\n❖──────𝗦𝗔𝗠𝗘𝗘𝗥 𝗝𝗜♡──────❖'
+                cc = f'**[📽️] Vid_ID:**┈ ⋞ 〈  {str(count).zfill(3)} 〉 ⋟ ┈**\n\n\n🌺 𝗟𝗘𝗖 𝗡𝗔𝗠𝗘➥{𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.mkv \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘** ➥ **{raw_text0}**\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽  {MR}\n\n•┈••✦ ❤𝗦𝗔𝗠𝗘𝗘𝗥 𝗕𝗛𝗬𝗬𝗔❤ ✦••┈•'
+                cc1 = f'**[📁] Pdf_ID:**┈ ⋞ 〈  {str(count).zfill(3)} 〉 ⋟ ┈\n\n\n🍂 𝗣𝗗𝗙 𝗡𝗔𝗠𝗘 ➥{𝗻𝗮𝗺𝗲𝟭} @SAMEER_OFFICAL_092.pdf  \n\n**📚 𝗕𝗔𝗧𝗖𝗛 𝗡𝗔𝗠𝗘 ➥**{raw_text0}**\n\n📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐁𝐘 ➽  {MR}\n\n•┈••✦ ❤𝗦𝗔𝗠𝗘𝗘𝗥 𝗕𝗛𝗬𝗬𝗔❤ ✦••┈•'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -191,7 +191,7 @@ async def upload(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`"
+                    Show = f"**⥥ ​🇩​​🇴​​🇼​​🇳​​🇱​​🇴​​🇦​​🇩​​🇮​​🇳​​🇬​⬇️⬇️... »**\n\n**📝Name »** `{name}\n❄Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n💀चलो ले चले तुम्हें तारों के शहर मे  ☠️"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
